@@ -31,6 +31,6 @@ elif choice == '3':
     if not is_same_password(password):
         print("Le mot de passe généré est")
         hashed_password = hash_password(password)
-        save_password(web, [username,password])
+        save_password(web, [username,hashed_password])
 else:
     print("Chiffre incorrect")
